@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<link href="stylesheets/main.css" rel="stylesheet">
+    <link href="stylesheets/header.css" rel="stylesheet">
+	<title>Ajouter élève</title>
+</head>
+<body>
+  <br><br><br>
+	<form method="POST" action="ajouter_eleve.php">
+	<!--Saisir nom-->
+	<div align="center">
+	<label class="field a-field a-field_a1 page__field">
+      <input class="field__input a-field__input" placeholder="e.g. DUBOIS" name="nom" required>
+      	<span class="a-field__label-wrap">
+        	<span class="a-field__label">NOM</span>
+      	</span>
+    </label>
+    <!--Saisir prenom-->
+    <label class="field a-field a-field_a2 page__field">
+      <input class="field__input a-field__input" placeholder="e.g. John" name="prenom" required>
+      	<span class="a-field__label-wrap">
+        	<span class="a-field__label">Prénom</span>
+      	</span>
+    </label>    
+    <!--Saisir date de naissance-->
+    <label class="field a-field a-field_a2 page__field">
+      <input class="field__input a-field__input" placeholder="jj/mm/aaaa" type="date" name="dn" required>
+      	<span class="a-field__label-wrap">
+        	<span class="a-field__label">Date de naissance</span>
+      	</span>
+    </label> 
+    <br><br><br><br><br>
+	<input type="submit" value="Ajouter">
+	<input type="reset" value="Reset">
+	</div>
+	</form>
+</body>
+</html>

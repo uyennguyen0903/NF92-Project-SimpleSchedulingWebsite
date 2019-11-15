@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<link href="stylesheets/main.css" rel="stylesheet">
+    <link href="stylesheets/header.css" rel="stylesheet">
+	<title>Ajouter nouveau thème</title>
+</head>
+<body>
+	<br><br><br>
+	<form method="POST" action="ajouter_theme.php">
+	<div align="center">
+
+		<!--Saisir nom-->
+		<div align="center">
+		<label class="field a-field a-field_a1 page__field">
+	      <input class="field__input a-field__input" type="text" placeholder="Saisir le nom" name="nom" required>
+	      	<span class="a-field__label-wrap">
+	        	<span class="a-field__label">Nom de thème</span>
+	      	</span>
+	    </label>
+
+	    <!--Saisir descriptif-->
+	    <label class="field a-field a-field_a2 page__field">
+	      <input class="field__input a-field__input" name="descriptif" placeholder="Descriptif" type="texterea" required>
+	      	<span class="a-field__label-wrap">
+	        	<span class="a-field__label">Descriptif</span>
+	      	</span>
+	    </label>    
+
+		<br><br>
+		<input type="submit" value="Ajouter">
+		<input type="reset" value="Reset">
+	</div>
+	</form>
+</body>
+</html>
